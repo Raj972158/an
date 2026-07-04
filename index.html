@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Telegram</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1912350136127254');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1912350136127254&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+overflow:hidden;
+}
+
+body::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#00d4ff;
+filter:blur(220px);
+opacity:.25;
+top:-150px;
+left:-100px;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#00ff95;
+filter:blur(220px);
+opacity:.20;
+bottom:-180px;
+right:-100px;
+}
+
+.card{
+position:relative;
+z-index:1;
+width:92%;
+max-width:420px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:25px;
+padding:35px 25px;
+text-align:center;
+box-shadow:0 15px 45px rgba(0,0,0,.4);
+}
+
+.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+margin-bottom:20px;
+}
+
+h1{
+color:white;
+font-size:28px;
+margin-bottom:10px;
+}
+
+p{
+color:#ddd;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:linear-gradient(45deg,#00e5ff,#00c853);
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+border-radius:50px;
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,255,170,.4);
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.countdown{
+margin-top:22px;
+color:#ffffff;
+font-size:18px;
+font-weight:bold;
+}
+
+.footer{
+margin-top:25px;
+color:#ccc;
+font-size:15px;
+}
+
+.footer a{
+color:#00e5ff;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+<img src="p.jpg" class="profile">
+
+<h1>Anjali Real Meating</h1>
+
+<p>Geniune and Trusted Service</p>
+
+<a class="btn"
+href="https://t.me/+h01xQWXRvO5lYzBl"
+target="_blank">
+Join Telegram Channel
+</a>
+
+<div class="countdown">
+Redirecting in <span id="timer">15</span> seconds...
+</div>
+
+</div>
+
+<script>
+
+let time=15;
+
+let countdown=setInterval(function(){
+
+time--;
+
+document.getElementById("timer").innerHTML=time;
+
+if(time<=0){
+
+clearInterval(countdown);
+
+window.location.href="https://t.me/+h01xQWXRvO5lYzBl";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
